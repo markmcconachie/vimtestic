@@ -12,10 +12,20 @@
         
 2. Run whole test suite with `<leader> r`
 
-3. Open the test file that you would like to focus on and enter
+3. Run a specific test file/target
+
+    *Specific file*
+  
+    Open the test file that you would like to focus on and enter
     `<leader> T` to mark it as the current test.
     
-4. Enter `<leader> t` to run that one specific file
+    *Specific target*
+    
+    Set a specific target with the command
+    
+        :TestTarget [target]
+    
+4. Enter `<leader> t` to run that one specific file or target
 
 ## Autoset test runner for a project
 
