@@ -4,8 +4,8 @@ fu! vimtestic#core#TestTarget(target)
 endf
 
 fu! vimtestic#core#RunTestFile()
-    if !exists("t:mcm_test_file")
-      echoer "[Vimtestic] No Testfile set"
+    if !exists("t:mcm_test_target")
+      echoer "[Vimtestic] No test target set"
     else
       exec 'call vimtestic#' . t:mcm_test_runner . '#RunTestFile' . '("' . t:mcm_test_target '")'
     end
