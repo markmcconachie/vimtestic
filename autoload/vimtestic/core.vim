@@ -1,13 +1,13 @@
-fu! vimtestic#core#SetTestFile(file)
-  let t:mcm_test_file=a:file
-  echom "Test file set to ". a:file
+fu! vimtestic#core#TestTarget(target)
+  let t:mcm_test_target=a:target
+  echom "Test target set to ". a:target
 endf
 
 fu! vimtestic#core#RunTestFile()
     if !exists("t:mcm_test_file")
       echoer "[Vimtestic] No Testfile set"
     else
-      exec 'call vimtestic#' . t:mcm_test_runner . '#RunTestFile' . '("' . t:mcm_test_file '")'
+      exec 'call vimtestic#' . t:mcm_test_runner . '#RunTestFile' . '("' . t:mcm_test_target '")'
     end
 endf
 
