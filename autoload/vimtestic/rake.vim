@@ -1,5 +1,5 @@
 fu! vimtestic#rake#RunTestFile(file)
-  exec '!FILE=' . a:file . " bundle exec rake test"
+  exec '!TEST=' . a:file . " bundle exec rake test"
 endf
 
 fu! vimtestic#rake#RunTestSuite()
