@@ -1,4 +1,4 @@
-fu! vimtestic#bin_rspec#rspec_cmd()
+fu! vimtestic#rspec#rspec_cmd()
   let cmd = '!'
 
   if filereadable("Gemfile")
@@ -15,11 +15,11 @@ fu! vimtestic#bin_rspec#rspec_cmd()
   return cmd
 endf
 
-fu! vimtestic#bin_rspec#RunTestFile(file)
-  exec vimtestic#bin_rspec#rspec_cmd() . a:file
+fu! vimtestic#rspec#RunTestFile(file)
+  exec vimtestic#rspec#rspec_cmd() . a:file
 endf
 
-fu! vimtestic#bin_rspec#RunTestSuite()
-  exec vimtestic#bin_rspec#rspec_cmd() . 'spec'
+fu! vimtestic#rspec#RunTestSuite()
+  exec vimtestic#rspec#rspec_cmd() . 'spec'
 endf
 
