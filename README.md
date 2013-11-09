@@ -42,6 +42,7 @@ Then create (in your project folder) a `.vimrc` file with the contents
 
 * Rspec
 * Rake
+* Django
 
 I will add more but feel free to pull request :)
 
